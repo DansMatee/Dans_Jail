@@ -8,14 +8,14 @@ local ExitPrisonPier = {name = "Prison Pier", x = 2882.63, y = -1376.32, z = 44.
 local jailTime = 0
 
 -- Test Function | Uses Left Arrow for Jailing
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(1)
-        if IsControlJustPressed(0, 0xA65EBAB4) then
-            jailMenu()
-        end
-    end
-end)
+-- Citizen.CreateThread(function()
+--     while true do
+--         Citizen.Wait(1)
+--         if IsControlJustPressed(0, 0xA65EBAB4) then
+--             jailMenu()
+--         end
+--     end
+-- end)
 
 
 
@@ -103,7 +103,7 @@ function InJail()
                 jailTime = jailTime - jailTime
                 print(jailTime)
             end
-            Citizen.Wait(20000) 
+            Citizen.Wait(60000) 
         end       
     end)
 end
