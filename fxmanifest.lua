@@ -15,4 +15,5 @@ server_scripts {
 
 exports {
     'jailMenu',
+    'deathJail'
 }

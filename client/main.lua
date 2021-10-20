@@ -163,3 +163,9 @@ function jailMenu()
         menu.close()
     end)
 end
+
+function deathJail()
+    if jailTime > 0 then
+        TriggerEvent('dans_jail:client:jailPlayer', jailTime)
+    end
+end
