@@ -24,6 +24,14 @@ There is a test keybind that can be used to open the jailMenu without plugging i
 To enable it, go to dans_fines -> client.lua, and from line 11 to 18, uncomment those lines. <br>
 The keybind is Left Arrow to open jailMenu() <br>
 
+
+To utilise the deathJail() function, navigate to your redemrp_respawn -> cl_main.lua, and line 191 should contain SavePosition() in the Callback 'select' <br>
+Create a new line underneath it and add the following piece of code. <br>
+```
+exports['dans_jail']:deathJail()
+```
+And that should be all you need! <br>
+
 # Required Resources
 RedEM:RP is required <br>
 Forum Post -> https://forum.cfx.re/t/redem-roleplay-gamemode-the-roleplay-gamemode-for-redm/915043 <br>
